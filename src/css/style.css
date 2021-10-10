@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+body {
+    margin: 0;
+}
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#videoElement {
+    width: 500px;
+    height: 375px;
+    background-color: #666;
+}
+
+button {
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    background-color: white;
+    border: 5px solid black;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1E90FF;
+}
+
+.rect {
+    border: 2px solid #a64ceb;
+    left: -1000px;
+    position: absolute;
+    top: -1000px;
+}
+
+.v-mirror__wrap {
+    height: 610px;
+    width: 750px;
+}
+
+.v-mirror__content {
+    /*display: flex;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.v-mirror__image-wrap {
+    position: relative;
+    height: 410px;
+    width: 440px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.file-upload__icon{
+    background: url(../images/Color.png) no-repeat center;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+}
+
+#uploadImg{
+    display: none;
+}
+.file-upload {
+    position: absolute;
+    bottom: 0;
+    padding: 0 10px;
+    height: 42px;
+    background: #FFFFFF;
+    border: 1px solid #E1E1E1;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.03);
+    border-radius: 20px;
+    text-align: center;
+}
+.file-upload:hover {
+    background: #1E90FF;
+}
+.file-upload label {
+    display: block;
+    cursor: pointer;
+}
+.file-upload span {
+    padding-left: 38px;
+    line-height: 40px;
+
+    font-weight:bold;
+
+}
+.v-mirror__img {
+    width: 100%;
+}
+
+.v-mirror__info {
+    flex: 1;
+    padding: 10px 25px;
+}
+
+.v-mirror__btn {
+    display: flex;
+    margin: 15px auto;
+    background: #000000;
+    border-radius: 50px;
+    padding: 10px 25px;
+    color: white;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.v-mirror__title {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.v-mirror__glasses-img-wrap {
+    width: 260px;
+    height: 130px;
+
+}
+
+.v-mirror__glasses-img {
+    width: 260px;
+    height: 130px;
+
+}
+
+.v-mirror__desc {
+    margin-top: 10px;
+}
+
+.glasses {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.glasses__subtitle {
+    padding: 15px;
+    font-weight: bold;
+}
+
+.glasses__list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.glasses__item {
+    height: 130px;
+    width: 200px;
+}
+
+.glasses__img {
+    width: 200px;
+    height: 100px;
+}
+
+.glasses__title {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    bottom: 0;
+}
+
+
+.imageAdjuster__draggableTrigger___1wplT {
+    cursor: move;
+    height: 32px;
+    position: absolute;
+    -ms-touch-action: none;
+    touch-action: none;
+    width: 32px;
+    z-index: 20;
+    /*left: 179px;
+    top: 196px;*/
+}
+
+.imageAdjuster__draggableTrigger___1wplT:after, .imageAdjuster__draggableTrigger___1wplT:before {
+    background: #f22a42;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: 15px;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+    transition: transform .5s ease, -webkit-transform .5s ease;
+    width: 32px;
+}
+
+.imageAdjuster__draggableTrigger___1wplT:before {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.imageAdjuster__draggableTrigger___1wplT:after {
+    -webkit-transform: rotate(
+            90deg);
+    transform: rotate(
+            90deg);
+}
+
+.v-mirror-details__info {
+    padding: 15px;
+}
+
+.v-mirror-details__item {
+    font-family: Open Sans, serif;
+    font-size: 14px;
+    line-height: 19px;
+    padding: 10px 0;
+}
+
+.v-mirror-details__input {
+    display: block;
+    margin-top: 10px;
+    padding: 6px 14px;
+    width: 75px;
+    height: 40px;
+    color: #89959C;
+    font-size: 14px;
+    line-height: 14px;
+    background: #FFFFFF;
+    border: 1px solid #ADA7A7;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.controls__btn {
+    display: flex;
+    margin: 15px auto;
+    background: #000000;
+    border-radius: 50px;
+    padding: 10px 25px;
+    color: white;
+    font-size: 16px;
+    line-height: 20px;
+}
